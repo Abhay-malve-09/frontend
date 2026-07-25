@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Contact</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="contact">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="index.html">Abhay Malve</a>
+        <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="resume.html">Resume</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="achievements.html">Achievements</a>
+          <a href="skills.html">Skills</a>
+          <a href="contact.html" class="active">Contact</a>
+        </nav>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="section">
+        <div class="container contact-grid">
+          <div>
+            <div class="section-heading">
+              <p class="eyebrow">Contact</p>
+              <h2>Let’s build something great together</h2>
+            </div>
+            <form id="contactForm" class="contact-form" novalidate>
+              <label>
+                Name
+                <input type="text" id="name" name="name" required />
+              </label>
+              <label>
+                Email
+                <input type="email" id="email" name="email" required />
+              </label>
+              <label>
+                Subject
+                <input type="text" id="subject" name="subject" required />
+              </label>
+              <label>
+                Message
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </label>
+              <button type="submit" class="btn btn-primary">Send Message</button>
+              <p id="formStatus" class="form-status" aria-live="polite"></p>
+            </form>
+          </div>
+
+          <aside class="contact-sidebar">
+            <h3>Reach Me</h3>
+            <p>Email: ravi@example.com</p>
+            <p>Phone: +91 98765 43210</p>
+            <div class="social-links">
+              <a href="#" aria-label="GitHub">GitHub</a>
+              <a href="#" aria-label="LinkedIn">LinkedIn</a>
+              <a href="#" aria-label="Instagram">Instagram</a>
+            </div>
+            <div class="map-placeholder">
+              <p>Google Maps Placeholder</p>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>About</h3>
+          <p>Professional portfolio of a Java Full Stack Developer with a passion for learning.</p>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <address>
+          <h3>Contact</h3>
+          <p>Email: <a href="mailto:abhaymale889@gmail.com">abhaymale889@gmail.com</a></p>
+          <p>Phone: <a href="tel:9770209030">9770209030</a></p>
+          <p>GitHub: <a href="https://github.com/Abhay-malve-09" target="_blank" rel="noopener">Abhay-malve-09</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/abhay-malve-b6796625b" target="_blank" rel="noopener">Abhay Malve</a></p>
+        </address>
+      </div>
+      <div class="container footer-bottom">
+        <p>&copy; <span id="year"></span> Abhay Malve. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <button id="scrollTop" class="scroll-top" aria-label="Scroll to the top">↑</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

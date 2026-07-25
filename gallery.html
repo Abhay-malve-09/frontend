@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Gallery</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="gallery">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="index.html">Abhay Malve</a>
+        <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="index.html">Home</a>
+          <a href="resume.html">Resume</a>
+          <a href="gallery.html" class="active">Gallery</a>
+          <a href="achievements.html">Achievements</a>
+          <a href="skills.html">Skills</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Gallery</p>
+            <h2>Projects and Moments</h2>
+          </div>
+
+          <div class="gallery-grid">
+            <figure class="gallery-card">
+              <img src="images/project-1.svg" alt="Java project illustration" />
+              <figcaption>Java Project Dashboard</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img src="images/project-2.svg" alt="Web app illustration" />
+              <figcaption>Responsive Web Interface</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img src="images/project-3.svg" alt="Database illustration" />
+              <figcaption>MySQL and JDBC Workflow</figcaption>
+            </figure>
+            <figure class="gallery-card">
+              <img src="images/project-4.svg" alt="Cloud deployment illustration" />
+              <figcaption>Docker and AWS Learning</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>About</h3>
+          <p>Professional portfolio of a Java Full Stack Developer with a passion for learning.</p>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <address>
+          <h3>Contact</h3>
+          <p>Email: <a href="mailto:abhaymale889@gmail.com">abhaymale889@gmail.com</a></p>
+          <p>Phone: <a href="tel:9770209030">9770209030</a></p>
+          <p>GitHub: <a href="https://github.com/Abhay-malve-09" target="_blank" rel="noopener">Abhay-malve-09</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/abhay-malve-b6796625b" target="_blank" rel="noopener">Abhay Malve</a></p>
+        </address>
+      </div>
+      <div class="container footer-bottom">
+        <p>&copy; <span id="year"></span> Abhay Malve. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <button id="scrollTop" class="scroll-top" aria-label="Scroll to the top">↑</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>

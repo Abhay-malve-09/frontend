@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Personal portfolio website for a Java Full Stack Developer." />
+    <title>Portfolio | Home</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="home">
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="logo" href="index.html">Abhay Malve</a>
+        <button class="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="index.html" class="active">Home</a>
+          <a href="resume.html">Resume</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="achievements.html">Achievements</a>
+          <a href="skills.html">Skills</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <p class="eyebrow">Welcome to my portfolio</p>
+            <h1>Hello, I am <span id="typingText">Java Full Stack Developer</span></h1>
+            <p class="intro">
+              I build reliable web applications with Java, Spring Boot, HTML, CSS, JavaScript,
+              and modern databases.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="resume.html">View Resume</a>
+              <a class="btn btn-secondary" href="contact.html">Hire Me</a>
+            </div>
+          </div>
+          <figure class="hero-visual">
+            <img src="portfolioImage.jpeg" />
+          </figure>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">About Me</p>
+            <h2>Passionate about building clean and scalable applications</h2>
+          </div>
+          <div class="card-grid">
+            <article class="info-card">
+              <h3>Who I Am</h3>
+              <p>
+                I am a motivated Java Full Stack Developer focused on turning business ideas
+                into user-friendly digital solutions.
+              </p>
+            </article>
+            <article class="info-card">
+              <h3>What I Do</h3>
+              <p>
+                I create frontend experiences, build backend services, and connect them with
+                databases using Java and related technologies.
+              </p>
+            </article>
+            <article class="info-card">
+              <h3>Why Choose Me</h3>
+              <p>
+                My approach combines strong fundamentals, clean coding, and attention to detail
+                to deliver dependable results.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h3>About</h3>
+          <p>Professional portfolio of a Java Full Stack Developer with a passion for learning.</p>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resume.html">Resume</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <address>
+          <h3>Contact</h3>
+          <p>Email: <a href="mailto:abhaymale889@gmail.com">abhaymale889@gmail.com</a></p>
+          <p>Phone: <a href="tel:9770209030">9770209030</a></p>
+          <p>GitHub: <a href="https://github.com/Abhay-malve-09" target="_blank" rel="noopener">Abhay-malve-09</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/abhay-malve-b6796625b" target="_blank" rel="noopener">Abhay Malve</a></p>
+        </address>
+      </div>
+      <div class="container footer-bottom">
+        <p>&copy; <span id="year"></span> Abhay Malve. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <button id="scrollTop" class="scroll-top" aria-label="Scroll to the top">↑</button>
+
+    <script src="script.js"></script>
+  </body>
+</html>
